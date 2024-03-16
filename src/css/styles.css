@@ -23,3 +23,67 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.sitelink{
+  display: flex;
+  margin: 20px 10px;
+ 
+  
+}
+input{
+  margin-left: 156px;
+  width: 272px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.timer{
+  display: flex;
+  padding-left: 156px;
+  padding-top: 32px;
+  width: 346px;
+  height: 72px;
+  gap: 24px;
+ 
+  
+}
+
+span{
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
+button{
+  width: 75px;
+  height: 40px;
+  background-color:#CFCFCF;
+  border: none;
+  padding: 8px 16px;
+  color: #989898;
+  border-radius: 8px;
+  margin-left: 8px;
+  }
+
+  .label{
+    font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #2e2f42;
+      text-transform: uppercase;
+  }
+  .value{
+    font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.2;
+      letter-spacing: 0.04em;
+      color: #2e2f42;
+  }
+
