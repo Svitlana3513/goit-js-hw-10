@@ -16,7 +16,7 @@ const options = {
   onClose(selectedDates) {
     console.log(selectedDates[0]);
     userSelectedDate = selectedDates[0];
-    timePeriod = userSelectedDate - options.defaultDate;
+    timePeriod = userSelectedDate - new Date();
     if (timePeriod < 1) {
       iziToast.error({
              message: 'Please choose a date in the future',
@@ -59,7 +59,7 @@ const inputDate = document.querySelector(`#datetime-picker`);
 const startBtn = document.querySelector(`button`);
 const clockFace = document.querySelectorAll(`.value`);
 
-
+startBtn.disabled = true;
 
 startBtn.addEventListener(`click`, event => {
   const repeatTime = setInterval(() => {
@@ -75,12 +75,12 @@ startBtn.addEventListener(`click`, event => {
     }
 
     const timer = convertMs(timePeriod);
-    showTime[0].innerText = timer.days.toString().padStart(2, '0');
-    showTime[1].innerText = timer.hours.toString().padStart(2, '0');
-    showTime[2].innerText = timer.minutes.toString().padStart(2, '0');
-    showTime[3].innerText = timer.seconds.toString().padStart(2, '0');
+    clockFace[0].innerText = timer.days.toString().padStart(2, '0');
+    clockFace[1].innerText = timer.hours.toString().padStart(2, '0');
+    clockFace[2].innerText = timer.minutes.toString().padStart(2, '0');
+    clockFace[3].innerText = timer.seconds.toString().padStart(2, '0');
   }, 1000);
-} )
+});
   
 
 
