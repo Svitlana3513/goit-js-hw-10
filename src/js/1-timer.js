@@ -59,7 +59,7 @@ const inputDate = document.querySelector(`#datetime-picker`);
 const startBtn = document.querySelector(`button`);
 const clockFace = document.querySelectorAll(`.value`);
 
-startBtn.disabled = true;
+
 
 startBtn.addEventListener(`click`, event => {
   const repeatTime = setInterval(() => {
