@@ -86,4 +86,13 @@ button{
       letter-spacing: 0.04em;
       color: #2e2f42;
   }
+  .form{
+    display: block;
+  }
+  fieldset{
+   display: flex;
+   margin: 20px 0;
+   max-width: 360px;
+   column-gap: 30px;
+  }
 
