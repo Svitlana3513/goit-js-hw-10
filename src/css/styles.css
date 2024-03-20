@@ -30,12 +30,12 @@
  
   
 }
-input{
+#datetime-picker{
   margin-left: 156px;
-  width: 272px;
-  height: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+    width: 272px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -44,7 +44,7 @@ input{
 
 .timer{
   display: flex;
-  padding-left: 156px;
+  margin-left: 156px;
   padding-top: 32px;
   width: 346px;
   height: 72px;
@@ -62,13 +62,23 @@ span{
 button{
   width: 75px;
   height: 40px;
-  background-color:#CFCFCF;
+  background: #6c8cff;
   border: none;
   padding: 8px 16px;
-  color: #989898;
+  color: #FFFFFF;
   border-radius: 8px;
   margin-left: 8px;
   }
+
+  button:disabled{
+    background-color: #CFCFCF;
+    color: #989898;
+  }
+  
+  button:hover,
+  button:focus {
+      
+    }
 
   .label{
     font-family: "Montserrat", sans-serif;
@@ -86,13 +96,42 @@ button{
       letter-spacing: 0.04em;
       color: #2e2f42;
   }
-  .form{
-    display: block;
+  .form {
+    display: flex;
+    flex-direction: column;
+     
   }
+  
   fieldset{
    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
    margin: 20px 0;
-   max-width: 360px;
-   column-gap: 30px;
+   width: 360px;
+   height: 64px;
+   column-gap: 48px;
   }
-
+  legend{
+    text-align: start;
+  }
+    .form button{
+    width: 360px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #4E75FF;
+    border: none;
+    padding: 8px 99px;
+    color: #FFFFFF;
+    margin-left: 8px;
+    font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      
+  }
+    .form button:hover{
+      background-color: #6C8CFF;
+    }
+  
