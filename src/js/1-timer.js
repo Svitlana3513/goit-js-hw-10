@@ -22,10 +22,12 @@ const options = {
              message: 'Please choose a date in the future',
              position: `topCenter`,
              color: `red`,
-});
+      });
+      startBtn.disabled = true;
     } else {
       startBtn.disabled = false;
       inputDate.disabled = true;
+      startBtn.classList.add(`btn-active`);
     }
   },
 };
@@ -66,7 +68,7 @@ startBtn.addEventListener(`click`, event => {
     timePeriod = userSelectedDate - new Date();
     event.preventDefault();
     inputDate.disabled = true;
-    
+    startBtn.classList.remove(`btn-active`);
 
     if (timePeriod < 1) {
       startBtn.disabled = true;
