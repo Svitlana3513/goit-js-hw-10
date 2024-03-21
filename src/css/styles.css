@@ -41,6 +41,10 @@
     letter-spacing: 0.04em;
     color: #2e2f42;
 }
+.input-disabled{
+  background:#FAFAFA;
+    color: #808080;
+}
 
 .timer{
   display: flex;

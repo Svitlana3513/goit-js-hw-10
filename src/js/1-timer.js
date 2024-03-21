@@ -69,7 +69,7 @@ startBtn.addEventListener(`click`, event => {
     event.preventDefault();
     inputDate.disabled = true;
     startBtn.classList.remove(`btn-active`);
-
+    inputDate.classList.add(`input-disabled`);
     if (timePeriod < 1) {
       startBtn.disabled = true;
       inputDate.disabled = false;
